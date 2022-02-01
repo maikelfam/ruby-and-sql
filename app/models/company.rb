@@ -1,2 +1,4 @@
 class Company < ApplicationRecord
-end
+    has_many :contacts
+
+end 
