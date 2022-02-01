@@ -12,7 +12,21 @@
 # Elon Musk - elon@tesla.com - Tesla, Inc.
 # Tim Cook - tim@apple.com - Apple Inc.
 
+puts "There are #{Contact.all.count} contacts"
+all_contacts = Contact.all
+for contact in all_contacts
+    puts "#{contact.first_name} #{contact.last_name} - #{contact.email} - #{contact.company.name}"
+end 
+
 # 2. similar to above, but this time organized by company, write code to display each company (name) and its contacts, e.g.:
+
+all_companies = Company.all
+for company in all_companies
+    puts company.name
+    for contact in company.contacts
+         puts " #{contact.first_name} #{contact.last_name} - #{contact.email}"
+    end 
+end 
 
 # ---------------------------------
 # Apple Inc.
