@@ -13,7 +13,7 @@ Company.destroy_all
 puts "There are now #{Company.all.count} companies."
 
 # 2. create new companies
-values = { name: "Apple.Inc", 
+values = { name: "Apple, Inc.", 
 url:"www.apple.com", 
 city: "Cupertino", 
 state: "CA" }
